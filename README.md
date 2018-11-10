@@ -4,10 +4,12 @@
 
 Time spent: **X** hours spent in total
 
-## User Stories
+## Required Stories
 - [ ] Sign Up/Log in
 - [ ] Home page
 - [ ] Settings page
 - [ ] Persisting user
-- [ ] Push notifications to complete assigned chore for the week
 - [ ] Chore assignment among roommates
+
+## Stretch Stories
+- [ ] Push notifications to complete assigned chore for the week
