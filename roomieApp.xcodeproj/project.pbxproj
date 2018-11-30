@@ -13,6 +13,8 @@
 		5D1B234121960B7E007AA2D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1B233F21960B7E007AA2D1 /* LaunchScreen.storyboard */; };
 		5D1B234C21960B7F007AA2D1 /* roomieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B234B21960B7F007AA2D1 /* roomieAppTests.swift */; };
 		5D1B235721960B7F007AA2D1 /* roomieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B235621960B7F007AA2D1 /* roomieAppUITests.swift */; };
+		5D2F639821B1FBDF0088B8D1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F639721B1FBDF0088B8D1 /* LogInViewController.swift */; };
+		5D2F639A21B1FC1A0088B8D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F639921B1FC1A0088B8D1 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		5D1B235221960B7F007AA2D1 /* roomieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roomieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1B235621960B7F007AA2D1 /* roomieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomieAppUITests.swift; sourceTree = "<group>"; };
 		5D1B235821960B7F007AA2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D2F639721B1FBDF0088B8D1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		5D2F639921B1FC1A0088B8D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				5D1B233D21960B7E007AA2D1 /* Assets.xcassets */,
 				5D1B233F21960B7E007AA2D1 /* LaunchScreen.storyboard */,
 				5D1B234221960B7E007AA2D1 /* Info.plist */,
+				5D2F639721B1FBDF0088B8D1 /* LogInViewController.swift */,
+				5D2F639921B1FC1A0088B8D1 /* SignUpViewController.swift */,
 			);
 			path = roomieApp;
 			sourceTree = "<group>";
@@ -253,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2F639A21B1FC1A0088B8D1 /* SignUpViewController.swift in Sources */,
+				5D2F639821B1FBDF0088B8D1 /* LogInViewController.swift in Sources */,
 				5D1B233721960B7D007AA2D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
