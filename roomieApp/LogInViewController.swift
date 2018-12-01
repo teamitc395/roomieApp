@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LogInViewController: UIViewController {
 
@@ -18,6 +19,14 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+    
+    @IBAction func onTapLogIn(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onTapSignUp(_ sender: Any) {
+        performSegue(withIdentifier: "signUpSegue", sender: nil)
+    }
+    
 }
