@@ -298,15 +298,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-wH-gAE">
-                                <rect key="frame" x="155" y="450" width="64" height="34"/>
+                                <rect key="frame" x="206" y="450" width="64" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onTapSignUp:" destination="yiJ-QP-BvE" eventType="touchUpInside" id="Nb0-Zf-mP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMz-T1-QyM">
+                                <rect key="frame" x="106" y="450" width="50" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="onTapLogIn:" destination="yiJ-QP-BvE" eventType="touchUpInside" id="jUa-Vd-jxm"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="logInSegue" id="5Lx-1w-n2Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gcc-wS-Q4B"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="JGX-vv-6nB" id="LmG-IM-EhT"/>
+                        <outlet property="errorMessageLabel" destination="D0o-Eh-4fN" id="XAk-Kh-hxw"/>
+                        <outlet property="groupIDTextField" destination="41y-oo-SXF" id="4dc-XT-V3N"/>
+                        <outlet property="logInButton" destination="FMz-T1-QyM" id="vgx-2h-mXw"/>
+                        <outlet property="nameTextField" destination="1MD-Pk-JIt" id="uwO-BO-ge1"/>
+                        <outlet property="passwordTextField" destination="r5o-sG-PjG" id="u6J-et-F1x"/>
+                        <outlet property="signUpButton" destination="EWz-wH-gAE" id="SGk-D7-AnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eB4-Md-6G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
