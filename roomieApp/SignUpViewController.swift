@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -23,6 +24,22 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onTapSignUp(_ sender: Any) {
+        let newUser = PFUser()
+        
+        newUser.email = emailTextField.text
+        newUser.password = passwordTextField.text
+        
+        newUser.signUpInBackground { (success: Bool, error: Error?) in
+            if success {
+                
+            }
+            
+            else {
+                
+            }
+        }
+        
+        // need to add name and group id to schema
     }
     
     @IBAction func onTapLogIn(_ sender: Any) {
