@@ -22,7 +22,13 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func onTapLogIn(_ sender: Any) {
-        
+        PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!) { (user: PFUser?, error: Error?) -> Void in
+            if user != nil {
+                print("You're logged in!")
+                
+            }
+            
+        }
     }
     
     @IBAction func onTapSignUp(_ sender: Any) {
