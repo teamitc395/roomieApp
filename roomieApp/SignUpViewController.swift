@@ -28,6 +28,8 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.errorMessageLabel.text = ""
+        
+        self.hideKeyboard()
     }
     
     @IBAction func onTapSignUp(_ sender: Any) {

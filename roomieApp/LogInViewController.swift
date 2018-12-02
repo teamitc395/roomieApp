@@ -32,6 +32,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         self.errorMessageLabel.text = ""
         
+        self.hideKeyboard()
     }
     
     @IBAction func onTapLogIn(_ sender: Any) {
