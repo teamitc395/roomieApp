@@ -30,3 +30,19 @@ class HomeViewController: UIViewController {
         print("B")
     }
 }
+
+/*
+ PFUser.logOutInBackground(block: { (error) in
+ if let error = error {
+ print(error.localizedDescription)
+ } else {
+ print("Successful loggout")
+ 
+ // Load and show the login view controller
+ let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+ let loginViewController = storyboard.instantiateViewController(withIdentifier: "logInViewController") as! LogInViewController
+ self.present(loginViewController, animated: true, completion: nil)
+ 
+ }
+ })
+ */
