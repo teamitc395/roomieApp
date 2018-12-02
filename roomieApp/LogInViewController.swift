@@ -9,6 +9,17 @@
 import UIKit
 import Parse
 
+extension UIViewController {
+    func hideKeyboard() {
+        let Tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(Tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 class LogInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -20,10 +31,14 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.errorMessageLabel.text = ""
+        
     }
     
     @IBAction func onTapLogIn(_ sender: Any) {
-        if emailTextField.text != nil && passwordTextField.text != nil {
+        if (emailTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)! {
+            self.errorMessageLabel.text = "Please enter email and password"
+        }
+        else {
             PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!) { (user: PFUser?, error: Error?) -> Void in
                 if user != nil {
                     print("You're logged in!")
@@ -35,9 +50,6 @@ class LogInViewController: UIViewController {
                     self.errorMessageLabel.text = "Failed to log in"
                 }
             }
-        }
-        else {
-            self.errorMessageLabel.text = "Please enter email and password"
         }
     }
     
