@@ -153,7 +153,12 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="Ku9-wd-d18">
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="U7y-dj-P8e"/>
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="U7y-dj-P8e">
+                            <connections>
+                                <action selector="onTapLogOut:" destination="WZH-Kx-rAx" id="ZxU-qB-Jm4"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="loggedOutSegue" id="JaG-te-HNy"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="b6a-bq-Ith">
                             <connections>
                                 <segue destination="AFy-wm-h3y" kind="show" identifier="settingsSegue" id="tvF-ul-IlY"/>
@@ -357,5 +362,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cns-Lx-52U"/>
+        <segue reference="JaG-te-HNy"/>
     </inferredMetricsTieBreakers>
 </document>

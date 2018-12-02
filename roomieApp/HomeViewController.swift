@@ -14,4 +14,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func onTapLogOut(_ sender: Any) {
+        PFUser.logOutInBackground { (error: Error?) in
+            if PFUser.current() == nil {
+                print("Logged Out!")
+                self.performSegue(withIdentifier: "loggedOutSegue", sender: nil)
+                
+            }
+        }
+    }
 }
