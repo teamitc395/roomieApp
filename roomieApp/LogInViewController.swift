@@ -26,7 +26,11 @@ class LogInViewController: UIViewController {
             if user != nil {
                 print("You're logged in!")
                 
+                self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
             }
+            //else if error?._code == {
+                
+            //}
             
         }
     }

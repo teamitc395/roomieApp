@@ -89,6 +89,7 @@
                         <outlet property="logInButton" destination="daF-A4-Jjw" id="59r-GE-DTN"/>
                         <outlet property="passwordTextField" destination="uJb-hb-AsU" id="Nvi-xm-Hfv"/>
                         <outlet property="signUpButton" destination="QYc-N7-Cyh" id="fMn-cf-6wQ"/>
+                        <segue destination="25J-bf-ftp" kind="presentation" identifier="loggedInSegue" id="Qlm-1Y-thH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -328,6 +329,7 @@
                         <outlet property="nameTextField" destination="1MD-Pk-JIt" id="uwO-BO-ge1"/>
                         <outlet property="passwordTextField" destination="r5o-sG-PjG" id="u6J-et-F1x"/>
                         <outlet property="signUpButton" destination="EWz-wH-gAE" id="SGk-D7-AnD"/>
+                        <segue destination="25J-bf-ftp" kind="presentation" identifier="signedUpSegue" id="cns-Lx-52U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eB4-Md-6G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,4 +355,7 @@
             <point key="canvasLocation" x="772" y="124.58770614692655"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cns-Lx-52U"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -26,17 +26,19 @@ class SignUpViewController: UIViewController {
     @IBAction func onTapSignUp(_ sender: Any) {
         let newUser = PFUser()
         
-        newUser.email = emailTextField.text
+        newUser.username = emailTextField.text
         newUser.password = passwordTextField.text
         
         newUser.signUpInBackground { (success: Bool, error: Error?) in
             if success {
                 print("Yeay created new user!")
+                
+                self.performSegue(withIdentifier: "signedUpSegue", sender: nil)
             }
             else {
                 print(error!.localizedDescription)
                 if error?._code == 202 {
-                    self.errorMessageLabel.text = "Account already exists with username"
+                    self.errorMessageLabel.text = "Account already exists with email"
                 }
             }
         }
@@ -45,7 +47,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onTapLogIn(_ sender: Any) {
-        performSegue(withIdentifier: "logInSegue", sender: nil)
+        self.performSegue(withIdentifier: "logInSegue", sender: nil)
     }
     
 }
