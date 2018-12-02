@@ -16,12 +16,17 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func onTapLogOut(_ sender: Any) {
+        print("A")
         PFUser.logOutInBackground { (error: Error?) in
-            if PFUser.current() == nil {
+            if PFUser.current() != nil {
+                print("Still logged in!")
+            }
+            else {
+                
                 print("Logged Out!")
                 self.performSegue(withIdentifier: "loggedOutSegue", sender: nil)
-                
             }
         }
+        print("B")
     }
 }
