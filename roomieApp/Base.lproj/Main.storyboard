@@ -99,7 +99,7 @@
         <!--Home-->
         <scene sceneID="kX4-Ma-E9a">
             <objects>
-                <viewController id="WZH-Kx-rAx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="WZH-Kx-rAx" customClass="HomeViewController" customModule="roomieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QF5-2l-IbD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -339,7 +339,7 @@
         <!--Navigation Controller-->
         <scene sceneID="vVJ-sn-98Z">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="25J-bf-ftp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" id="25J-bf-ftp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hWG-dq-6Jj">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

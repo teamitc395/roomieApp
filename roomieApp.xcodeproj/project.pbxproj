@@ -15,6 +15,7 @@
 		5D1B235721960B7F007AA2D1 /* roomieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B235621960B7F007AA2D1 /* roomieAppUITests.swift */; };
 		5D2F639821B1FBDF0088B8D1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F639721B1FBDF0088B8D1 /* LogInViewController.swift */; };
 		5D2F639A21B1FC1A0088B8D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F639921B1FC1A0088B8D1 /* SignUpViewController.swift */; };
+		5D94591921B3C30400EACA43 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94591821B3C30400EACA43 /* HomeViewController.swift */; };
 		AE7540848CCF3B902DA8DC64 /* Pods_roomieAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACBA26B69849499C875EFF7 /* Pods_roomieAppUITests.framework */; };
 		CFD51492F51871B4B10615B4 /* Pods_roomieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7E9BB18D59FFD67509AC2E /* Pods_roomieApp.framework */; };
 		E04910AC6459543C54FD9F59 /* Pods_roomieAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC12DAA10FF619DFFE271BC6 /* Pods_roomieAppTests.framework */; };
@@ -54,6 +55,7 @@
 		5D1B235821960B7F007AA2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D2F639721B1FBDF0088B8D1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		5D2F639921B1FC1A0088B8D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5D94591821B3C30400EACA43 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E7E9BB18D59FFD67509AC2E /* Pods_roomieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65174F49CE49FBA180457A18 /* Pods-roomieAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomieAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomieAppUITests/Pods-roomieAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DB28C63C7AFFFD485153C52 /* Pods-roomieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomieApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomieApp/Pods-roomieApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				5D1B234221960B7E007AA2D1 /* Info.plist */,
 				5D2F639721B1FBDF0088B8D1 /* LogInViewController.swift */,
 				5D2F639921B1FC1A0088B8D1 /* SignUpViewController.swift */,
+				5D94591821B3C30400EACA43 /* HomeViewController.swift */,
 			);
 			path = roomieApp;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				5D2F639A21B1FC1A0088B8D1 /* SignUpViewController.swift in Sources */,
 				5D2F639821B1FBDF0088B8D1 /* LogInViewController.swift in Sources */,
 				5D1B233721960B7D007AA2D1 /* AppDelegate.swift in Sources */,
+				5D94591921B3C30400EACA43 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

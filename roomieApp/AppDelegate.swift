@@ -25,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://ancient-shelf-62607.herokuapp.com/parse"
             }))
         
+        if PFUser.current() != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeNC")
+        }
+        
         return true
     }
 
@@ -49,7 +54,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-
