@@ -19,6 +19,12 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
     
+    /*
+     Cannot find out how to add property to PFUser so we need to just make an
+     account with an email as a username and then just present the sign up screen,
+     but only use the log in screen on demo video
+    */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

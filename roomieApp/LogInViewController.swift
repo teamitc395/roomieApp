@@ -28,15 +28,15 @@ class LogInViewController: UIViewController {
                 
                 self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
             }
-            //else if error?._code == {
-                
-            //}
+            else {
+                print("Failed to log in")
+            }
             
         }
     }
     
     @IBAction func onTapSignUp(_ sender: Any) {
-        performSegue(withIdentifier: "signUpSegue", sender: nil)
+        self.performSegue(withIdentifier: "signUpSegue", sender: nil)
     }
     
 }
