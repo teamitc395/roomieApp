@@ -27,6 +27,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.errorMessageLabel.text = ""
     }
     
     @IBAction func onTapSignUp(_ sender: Any) {
@@ -48,8 +49,6 @@ class SignUpViewController: UIViewController {
                 }
             }
         }
-        
-        // need to add name and group id to schema
     }
     
     @IBAction func onTapLogIn(_ sender: Any) {

@@ -19,19 +19,25 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.errorMessageLabel.text = ""
     }
     
     @IBAction func onTapLogIn(_ sender: Any) {
-        PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!) { (user: PFUser?, error: Error?) -> Void in
-            if user != nil {
-                print("You're logged in!")
-                
-                self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
+        if emailTextField.text != nil && passwordTextField.text != nil {
+            PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!) { (user: PFUser?, error: Error?) -> Void in
+                if user != nil {
+                    print("You're logged in!")
+                    
+                    self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
+                }
+                else {
+                    print("Failed to log in")
+                    self.errorMessageLabel.text = "Failed to log in"
+                }
             }
-            else {
-                print("Failed to log in")
-            }
-            
+        }
+        else {
+            self.errorMessageLabel.text = "Please enter email and password"
         }
     }
     
