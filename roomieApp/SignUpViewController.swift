@@ -31,11 +31,13 @@ class SignUpViewController: UIViewController {
         
         newUser.signUpInBackground { (success: Bool, error: Error?) in
             if success {
-                
+                print("Yeay created new user!")
             }
-            
             else {
-                
+                print(error!.localizedDescription)
+                if error?._code == 202 {
+                    self.errorMessageLabel.text = "Account already exists with username"
+                }
             }
         }
         
