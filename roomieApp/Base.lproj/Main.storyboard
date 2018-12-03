@@ -53,13 +53,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error Message Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaC-Av-Lzy">
-                                <rect key="frame" x="102" y="289" width="170" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daF-A4-Jjw">
                                 <rect key="frame" x="231" y="347" width="50" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,6 +72,13 @@
                                     <segue destination="yiJ-QP-BvE" kind="presentation" identifier="signUpSegue" id="H9G-Mz-AxM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter valid email &amp; password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaC-Av-Lzy">
+                                <rect key="frame" x="16" y="284" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -153,13 +153,20 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="Ku9-wd-d18">
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="U7y-dj-P8e"/>
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="U7y-dj-P8e">
+                            <connections>
+                                <action selector="onTapLogOut:" destination="WZH-Kx-rAx" id="FwJ-xs-mlf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="b6a-bq-Ith">
                             <connections>
                                 <segue destination="AFy-wm-h3y" kind="show" identifier="settingsSegue" id="tvF-ul-IlY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loggedOutSegue" id="Sbl-dM-M8y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pc-8J-wtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -356,6 +363,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cns-Lx-52U"/>
+        <segue reference="Qlm-1Y-thH"/>
+        <segue reference="Sbl-dM-M8y"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -37,7 +37,7 @@ class LogInViewController: UIViewController {
     
     @IBAction func onTapLogIn(_ sender: Any) {
         if (emailTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)! {
-            self.errorMessageLabel.text = "Please enter email and password"
+            self.errorMessageLabel.text = "Please enter valid email & password"
         }
         else {
             PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!) { (user: PFUser?, error: Error?) -> Void in

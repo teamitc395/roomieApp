@@ -6,6 +6,19 @@
 //  Copyright © 2018 Kenia Rioja. All rights reserved.
 //
 
+/*
+ Allen, for the chores, we might consider making them PFObjects that we can associate with
+ the current user as guided by
+ https://guides.codepath.com/ios/Building-Data-driven-Apps-with-Parse#fetching-data-from-parse-via-pfquery
+ and we can just model our app video to show us adding a chore to an existing list of chores we
+ can fetch from Parse and then logging out
+ We can just describe all the other details. Let me know if you have any thoughts or questions via text.
+ The log in I made to test the app is
+ jsmith@gmail.com
+ password
+ -Kenia
+ */
+
 import UIKit
 import Parse
 
@@ -15,36 +28,21 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    /*
     @IBAction func onTapLogOut(_ sender: Any) {
-        print("A")
-        PFUser.logOutInBackground { (error: Error?) in
-            if PFUser.current() != nil {
-                print("Still logged in!")
-            }
-            else {
-                
-                print("Logged Out!")
-                self.performSegue(withIdentifier: "loggedOutSegue", sender: nil)
+        if PFUser.current() != nil {
+            PFUser.logOutInBackground { (error: Error?) in
+                if PFUser.current() == nil {
+                    print("Current user is now nil")
+                    
+                    self.performSegue(withIdentifier: "loggedOutSegue", sender: nil)
+                }
+                else {
+                    print("Failed to log out")
+                }
             }
         }
-        print("B")
+        else {
+            print("Current user is already nil")
+        }
     }
-    */
 }
-
-/*
- PFUser.logOutInBackground(block: { (error) in
- if let error = error {
- print(error.localizedDescription)
- } else {
- print("Successful loggout")
- 
- // Load and show the login view controller
- let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
- let loginViewController = storyboard.instantiateViewController(withIdentifier: "logInViewController") as! LogInViewController
- self.present(loginViewController, animated: true, completion: nil)
- 
- }
- })
- */

@@ -25,11 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://ancient-shelf-62607.herokuapp.com/parse"
             }))
         
-        if PFUser.current() != nil {
+        if PFUser.current() == nil {
+            print("New session: no current user")
+        
+        }
+        else {
+            print("New session: there is a current user")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeNC")
         }
-        
         return true
     }
 
