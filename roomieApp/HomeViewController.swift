@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    /*
     @IBAction func onTapLogOut(_ sender: Any) {
         print("A")
         PFUser.logOutInBackground { (error: Error?) in
@@ -29,6 +30,7 @@ class HomeViewController: UIViewController {
         }
         print("B")
     }
+    */
 }
 
 /*
