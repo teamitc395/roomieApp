@@ -12,3 +12,6 @@ Time spent: **30** hours spent in total
 
 ## Stretch Stories
 - [ ] Push notifications to complete assigned chore for the week
+
+## Presentation
+
