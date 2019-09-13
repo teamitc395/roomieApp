@@ -15,3 +15,4 @@ Time spent: **30** hours spent in total
 
 ## Presentation
 
+![Flow Diagram](https://github.com/teamitc395/roomieApp/blob/master/roomieApp%20flow%20diagram.jpg)
